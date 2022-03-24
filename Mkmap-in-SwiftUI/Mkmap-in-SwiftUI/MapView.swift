@@ -20,7 +20,7 @@ var forDisplay = data
     span: MKCoordinateSpan(latitudeDelta: 1.5, longitudeDelta: 2)
 )
 
-//now we need to create this Coordinator that is
+//now we need to create this Coordinator to comunicate with SwiftUI View
 class Coordinator: NSObject, MKMapViewDelegate {
     
     var parent: MapView
@@ -29,7 +29,7 @@ class Coordinator: NSObject, MKMapViewDelegate {
         self.parent = parent
     }
     
-/// showing annotation on the map
+// showing annotation on the map
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         guard let annotation = annotation as? LandmarkAnnotation else { return nil }
         return AnnotationView(annotation: annotation, reuseIdentifier: AnnotationView.ReuseID)
@@ -39,7 +39,7 @@ class Coordinator: NSObject, MKMapViewDelegate {
 
 
 //we need to add a new method called makeCoordinator(), which SwiftUI will automatically call if we implement it. All this needs to do is create and configure an instance of our Coordinator class, then send it back.
-//    We don’t call makeCoordinator() ourselves; SwiftUI calls it automatically when an instance of ImagePicker is created.
+//    We don’t call makeCoordinator() ourselves; SwiftUI calls it automatically when an instance  is created.
 func makeCoordinator() -> Coordinator {
     MapView.Coordinator(self)
 }
