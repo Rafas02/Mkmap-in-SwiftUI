@@ -15,9 +15,17 @@ In this project I want to show how to create UiKit components in SwiftUi thanks 
 ---> customize the AnnotationView, like clustering the pin on the map
 
 
-![MkMap-in-SwiftUi] <img src="https://user-images.githubusercontent.com/92868940/160098219-10502047-6584-47b5-92b3-1fab53edb717.png" width="300">
-![MkMap-in-SwiftUi-clustering-example](https://user-images.githubusercontent.com/92868940/160098311-37707762-dcac-44c5-98ac-b0ee1d59e2f0.png)
-![MkMap-in-SwiftUi-clustering-example2](https://user-images.githubusercontent.com/92868940/160098344-aa3eab53-a77a-44a9-a704-00bb9bcf025e.png)
+![MkMap-in-SwiftUi]
+
+<img src="https://user-images.githubusercontent.com/92868940/160098219-10502047-6584-47b5-92b3-1fab53edb717.png" width="300">
+
+![MkMap-in-SwiftUi-clustering-example]
+
+<img src="https://user-images.githubusercontent.com/92868940/160098311-37707762-dcac-44c5-98ac-b0ee1d59e2f0.png" width="300">
+
+![MkMap-in-SwiftUi-clustering-example2]
+
+<img src="https://user-images.githubusercontent.com/92868940/160098344-aa3eab53-a77a-44a9-a704-00bb9bcf025e.png" width="300">
 
 This project is only an example to integrate Uikit component in a SwiftUi framework. It can be used as a reference.
 
